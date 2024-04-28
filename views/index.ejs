@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Library</title>
+</head>
+<body>
+    <input type="file" id="music-file-upload" multiple>
+    <table id="file-list">
+    <% files.forEach(file => { %>
+        <tr>
+            <td><%= file.title %></td>
+            <td><%= file.artist %></td>
+        </tr>
+    <% }); %>
+    </table>
+</body>
+</html>
