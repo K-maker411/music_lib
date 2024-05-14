@@ -17,25 +17,25 @@ AudioFile.init({
         // audio file title (if applicable)
         title: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
             defaultValue: "NONE"
         },
         // album title (if applicable)
         album: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
             defaultValue: "NONE"
         },
         // track number in album (if applicable)
         track_number : {
             type: DataTypes.INTEGER,
-            allowNull: true,
+            allowNull: false,
             defaultValue: "NONE"
         },
         // artist name (if applicable)
         artist: {
             type: DataTypes.STRING,
-            allowNull: true,
+            allowNull: false,
             defaultValue: "NONE"
         },
 
@@ -43,7 +43,7 @@ AudioFile.init({
         // if applicable
         date: {
             type: DataTypes.DATE,
-            allowNull: true,
+            allowNull: false,
             defaultValue: "NONE"
         }
     },
